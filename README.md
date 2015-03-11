@@ -28,7 +28,7 @@ TL;DR
 
 ```erb
 
-  <!-- drop it in yer fucking viewz -->
+  <!-- drop it in yer fucking layoutz -->
 
   <%= render :template => 'fucking_favicons' %>
 
