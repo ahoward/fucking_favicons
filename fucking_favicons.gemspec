@@ -3,7 +3,7 @@
 
 Gem::Specification::new do |spec|
   spec.name = "fucking_favicons"
-  spec.version = "1.0.0"
+  spec.version = "1.0.42"
   spec.platform = Gem::Platform::RUBY
   spec.summary = "fucking_favicons"
   spec.description = "fucking favicons fucking suck"
@@ -12,6 +12,7 @@ Gem::Specification::new do |spec|
   spec.files =
 ["README.md",
  "Rakefile",
+ "fucking_favicons.gemspec",
  "lib",
  "lib/fucking_favicons",
  "lib/fucking_favicons.rb",
