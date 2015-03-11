@@ -1,0 +1,25 @@
+<% 
+  FuckingFavicons::CONFIG.each do |config| 
+
+    case config[:path].to_s
+      when /apple/
+        size = Array(config[:size]).first
+        path = config[:path]
+        rel  = 'apple-touch-icon'
+        type = 'image/png'
+
+      when /favicon-.*png/
+        size = Array(config[:size]).first
+        path = config[:path]
+        rel  = 'image/png'
+        type = 'image/png'
+
+      else
+        next
+    end
+
+%>
+<%= favicon_link_tag path, :rel => rel, :type => type, :sizes => "#{ size }x#{ size }" %>
+<% end %>
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
