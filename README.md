@@ -26,7 +26,7 @@ TL;DR
 
 ```
 
-```eruby
+```erb
 
   <!-- drop it in yer fucking viewz -->
 
@@ -37,7 +37,9 @@ TL;DR
 ABOUT
 =====
 
-  fucking_favicons.rb is the best gem in the world.  if you doubt this, read https://css-tricks.com/favicon-quiz/ 
+  fucking_favicons.rb is the best gem in the world.
+  
+  if you doubt this, read https://css-tricks.com/favicon-quiz/ 
 
   fucking_favicons.rb is a rails engine, and rack middleware, which lets you
   provide a *single* favicon.png file for your project and let all the rest be
