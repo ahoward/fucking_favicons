@@ -6,15 +6,28 @@ module FuckingFavicons
   require_relative 'fucking_favicons/version'
 
 #
+  def dependencies
+    {
+      'mini_magick'             => [ 'mini_magick'             , ' >= 3.1' ]
+    }
+  end
+
+  def description
+    'fucking favicons fucking suck'
+  end
+
+#
   def libdir(*args, &block)
-    if args.blank? and block.blank?
-      @libdir ||= (
-        dirname, basename = File.split(File.expand_path(__FILE__))
-        base = basename.split('.').first
-        File.join(dirname, base).freeze
-      )
-    else
-      File.join(libdir, *args.flatten.compact.map(&:to_s))
+    @libdir ||= File.expand_path(__FILE__).sub(/\.rb$/,'')
+    args.empty? ? @libdir : File.join(@libdir, *args)
+  ensure
+    if block
+      begin
+        $LOAD_PATH.unshift(@libdir)
+        block.call()
+      ensure
+        $LOAD_PATH.shift()
+      end
     end
   end
 
@@ -102,3 +115,4 @@ module FuckingFavicons
     )
   end
 end
+Fucking_favicons = FuckingFavicons
