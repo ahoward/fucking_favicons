@@ -30,7 +30,11 @@ TL;DR
 
   <!-- drop it in yer fucking layoutz -->
 
-  <%= render :template => 'fucking_favicons' %>
+  <head>
+
+    <%= render :template => 'fucking_favicons' %>
+
+  </head>
 
 ```
 
