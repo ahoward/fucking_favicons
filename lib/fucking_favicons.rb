@@ -8,7 +8,7 @@ module FuckingFavicons
 #
   def dependencies
     {
-      'mini_magick'             => [ 'mini_magick'             , ' >= 3.1' ]
+      'mini_magick'             => [ 'mini_magick'             , ' ~> 3.1' ]
     }
   end
 

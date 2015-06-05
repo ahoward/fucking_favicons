@@ -1,5 +1,5 @@
 module FuckingFavicons
-  VERSION = '1.42.0'
+  VERSION = '1.5.0'
 
   def FuckingFavicons.version
     ::FuckingFavicons::VERSION
