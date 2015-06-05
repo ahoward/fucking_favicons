@@ -18,7 +18,7 @@ TL;DR
 
 ```bash
 
-  # make a fucking favicon
+  # make a fucking favicon - pro-tip since this gem resizes it make it big = 256x256 ish
 
   ~> cd app/views/images
 
@@ -30,7 +30,11 @@ TL;DR
 
   <!-- drop it in yer fucking layoutz -->
 
-  <%= render :template => 'fucking_favicons' %>
+  <head>
+
+    <%= render :template => 'fucking_favicons' %>
+
+  </head>
 
 ```
 
