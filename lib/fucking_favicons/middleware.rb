@@ -12,7 +12,7 @@ module FuckingFavicons
             @favicon_path = first
 
             if STDERR.tty?
-              warn "FuckingFavicon: #{ @favicon_path }"
+              #warn "FuckingFavicon: #{ @favicon_path }"
             end
 
             break
