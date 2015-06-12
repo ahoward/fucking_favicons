@@ -19,7 +19,7 @@
     end
 
 %>
-<%= favicon_link_tag path, :rel => rel, :type => type, :sizes => "#{ size }x#{ size }" %>
+<%= favicon_link_tag asset_path(path), :rel => rel, :type => type, :sizes => "#{ size }x#{ size }" %>
 <% end %>
 <meta name="msapplication-TileColor" content="#ffffff" />
 <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
