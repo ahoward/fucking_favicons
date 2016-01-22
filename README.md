@@ -19,10 +19,16 @@ TL;DR
 ```bash
 
   # make a fucking favicon - pro-tip since this gem resizes it make it big = 256x256 ish
+  
+  # you can either create one in the default location, for example
 
-  ~> cd app/views/images
+  ~> cd app/assets/images/
 
   ~> curl -sO http://s3.amazonaws.com/drawohara.com.images/favicon.png
+
+  # or you can configure the path where the generator will look
+  
+  
 
 ```
 
