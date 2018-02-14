@@ -3,11 +3,11 @@
 
 Gem::Specification::new do |spec|
   spec.name = "fucking_favicons"
-  spec.version = "1.6.0"
+  spec.version = "1.5.0"
   spec.platform = Gem::Platform::RUBY
   spec.summary = "fucking_favicons"
   spec.description = "fucking favicons fucking suck"
-  spec.license = "same as ruby's"
+  spec.license = "Ruby"
 
   spec.files =
 ["README.md",
@@ -33,7 +33,7 @@ Gem::Specification::new do |spec|
   spec.test_files = nil
 
   
-    spec.add_dependency(*["mini_magick", " ~> 4.0"])
+    spec.add_dependency(*["mini_magick", " ~> 3.1"])
   
 
   spec.extensions.push(*[])
