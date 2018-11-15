@@ -1,11 +1,17 @@
-<% 
-  FuckingFavicons::CONFIG.each do |config| 
+<%
+  FuckingFavicons::CONFIG.each do |config|
 
     case config[:path].to_s
       when /apple/
         size = Array(config[:size]).first
         path = config[:path]
         rel  = 'apple-touch-icon'
+        type = 'image/png'
+
+      when /android-chrome/
+        size = Array(config[:size]).first
+        path = config[:path]
+        rel  = 'android-chrome'
         type = 'image/png'
 
       when /favicon-.*png/
