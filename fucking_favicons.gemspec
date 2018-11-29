@@ -3,7 +3,7 @@
 
 Gem::Specification::new do |spec|
   spec.name = "fucking_favicons"
-  spec.version = "1.6.0"
+  spec.version = "1.6.1"
   spec.platform = Gem::Platform::RUBY
   spec.summary = "fucking_favicons"
   spec.description = "fucking favicons fucking suck"
