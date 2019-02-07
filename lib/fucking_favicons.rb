@@ -52,8 +52,10 @@ module FuckingFavicons
     { path: 'apple-touch-icon-120x120.png', size: [120, 120] },
     { path: 'apple-touch-icon-144x144.png', size: [144, 144] },
     { path: 'apple-touch-icon-152x152.png', size: [152, 152] },
+    { path: 'apple-touch-icon-180x180.png', size: [180, 180] },
     { path: 'apple-touch-icon.png', size: [57, 57] },
-    { path: 'android-chrome-192x192.png', size: [192, 192] },
+    { path: 'android-chrome-144x144.png', size: [144, 144] },
+    { path: 'android-chrome-192x192.png', size: [192, 192] }
   ]
 
 #
